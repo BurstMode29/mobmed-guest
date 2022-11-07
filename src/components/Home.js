@@ -1,6 +1,6 @@
 import React from 'react'
 import contact from '../images/contact_us.png';
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigation';
 
 function Home() {
@@ -24,14 +24,15 @@ function Home() {
 
                 <div className='MainContent'>
 
-                    <div className='content1'>
+                    <Link to='/signup@doctor'><div className='content1'>
                         <div>
                             <div><i class="fa-solid fa-user-doctor"></i></div>
                             <div>DOCTORS</div>
                             <p>Are you a doctor looking for better ways to market your service/profession click here to sign up!</p>
                         </div>
 
-                    </div>
+                    </div></Link>
+
                     <div className='content2'>
                         <div>
                             <div><i class="fa-solid fa-truck-medical"></i></div>
@@ -44,7 +45,7 @@ function Home() {
                         <div>
                             <div><i class="fa-solid fa-prescription-bottle-medical"></i></div>
                             <div>PHARMACIES</div>
-                            <p>Sell your medical products/cosmetics online using mobmeds ecommerce platform, click here to swign up as a pharmacists.</p>
+                            <p>Sell your medical products/cosmetics online using mobmeds ecommerce platform, click here to sign up as a pharmacists.</p>
                         </div>
 
                     </div>

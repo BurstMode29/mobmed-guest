@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navigation() {
     return (
         <div>
             <div className='Logo'>
 
-                <div className='MenuLogo'><i class="fa-solid fa-heart-pulse"></i><a href='#'>MOB<span className='span1'>MED</span></a></div>
+                <Link to='/'><div className='MenuLogo'><i class="fa-solid fa-heart-pulse"></i>MOB<span className='span1'>MED</span></div></Link>
 
                 <div className='Navigation' id='Nav'>
                     <div className='NavLinks' id='Links'>
@@ -17,6 +18,7 @@ function Navigation() {
                                 <div className='DesktopLoginContent3' id='DLC3'><i class="fa-solid fa-sort"></i></div>
                             </div>
                         </div>
+                        <div><a href='#'>REGISTER</a></div>
                         <div><a href='#'>ABOUT</a></div>
                         <div><a href='#'>SERVICES</a></div>
                         <div><a href='#'>CONTACT</a></div>
