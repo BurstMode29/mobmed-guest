@@ -6,96 +6,294 @@
 .FormArea {
     width: 100%;
     height: 100%;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Form {
-    height: 900px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
     background-color: white;
-    box-shadow: 0px 0px 20px grey;
 }
 
-.FormHeader {
+.TopLeft {
+    text-align: left;
+}
+
+@media only screen and (max-width:800px) {
+    .TopLeft {
+        text-align: center;
+    }
+}
+
+.TopLeftHeader {
+    margin: 20px 20px;
+    font-weight: bold;
+    color: #042940;
+}
+
+.TopLeftText {
+    margin: 20px 20px;
+    width: 99%;
+    color: #042940;
+}
+
+@media only screen and (max-width:800px) {
+    .TopLeftText {
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+.SeperatorLine {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* TopLeft */
-.TopLeft {
-    text-align: left;
-    position: relative;
-    top: -20px;
-    left: -10px;
-}
-
-.FormLogo {
-    font-weight: bold;
-    font-size: 30px;
-    color: #9FC131;
-}
-
-.FormLogo span {
-    color: #042940;
-}
-
-.FormSlogan {
-    font-size: 12px;
-    color: #9FC131;
-}
-
-.QuickLink {
-    top: 40px;
-    left: 170px;
-    position: relative;
-}
-
-/* TopRight */
-.TopRight {
-    right: -15px;
-    position: relative;
-    text-align: left;
-}
-
-.TopRightHeader {
-    color: #042940;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.TopRightText {
-    font-weight: bold;
-    font-size: 12px;
-    width: 270px;
-    color: #042940;
-}
-
-/* FormSeperator */
 .FormLine {
-    top: 20px;
-    left: 30px;
-    position: relative;
-    width: 90%;
-    height: 2px;
     background-color: #042940;
+    height: 5px;
+    width: 97%;
 }
 
 .SectionText {
+    text-align: left;
+    margin: 20px 20px;
+    width: 100%;
+    color: #042940;
+}
+
+@media only screen and (max-width:800px) {
+    .SectionText {
+        text-align: center;
+        margin: 0px;
+        padding-top: 10px;
+    }
+}
+
+.SectionHeader {
+    text-align: left;
     font-weight: bold;
     color: #042940;
-    top: 20px;
-    left: 30px;
-    position: relative;
-    width: 580px;
-    font-size: 12px;
+}
+
+.Header-Droplist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+@media only screen and (max-width:800px) {
+    .Header-Droplist {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .SectionHeader {
+        text-align: center;
+    }
+}
+
+/* Input1 */
+.Input1 {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Input1 input {
+    width: 500px;
+}
+
+@media only screen and (max-width:800px) {
+    .Input1 {
+        flex-direction: column;
+    }
+
+    .Input1 input {
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+    }
+}
+
+/* Input1 */
+
+
+/* Input2 */
+.Input2 {
+    text-align: left;
+    margin: 1px 20px;
+}
+
+.Input2 input {
+    width: 500px;
+    margin: 0px 0px 20px 0px;
+}
+
+@media only screen and (max-width:800px) {
+
+    .Input2 {
+        text-align: center;
+    }
+
+    .Input2 input {
+        width: 100%;
+    }
+}
+/* Input2 */
+
+
+/* Input3 */
+.Input3 {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Input3 input {
+    width: 300px;
+}
+
+@media only screen and (max-width:800px) {
+    .Input3 {
+        flex-direction: column;
+    }
+
+    .Input3 input {
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+    }
+}
+
+/* Input3 */
+
+
+/* Input4 */
+.Input4 {
+    margin: 20px;
     text-align: left;
 }
 
-.PersonalInformation {
-    top: 30px;
-    position: relative;
+.Input4 input {
+    width: 500px;
+}
+
+@media only screen and (max-width:800px) {
+
+    .Input4 {
+        text-align: center;
+    }
+
+    .Input4 input {
+        width: 100%;
+    }
+}
+/* Input4 */
+
+
+/* Input5 */
+.Input5 {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Input5 input {
+    width: 300px;
+}
+
+@media only screen and (max-width:800px) {
+    .Input5 {
+        flex-direction: column;
+    }
+
+    .Input5 input {
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+    }
+}
+/* Input5 */
+
+
+
+/* Input6 */
+.Input6 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Input6 input {
+    width: 500px;
+}
+
+@media only screen and (max-width:800px) {
+    .Input6 {
+        flex-direction: column;
+    }
+
+    .Input6 input {
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+    }
+}
+/* Input6 */
+
+/* Input7 */
+.Input7 {
+    margin: 20px;
+    text-align: left;
+}
+
+.Input7 input {
+    width: 500px;
+}
+
+@media only screen and (max-width:800px) {
+
+    .Input7 {
+        text-align: center;
+    }
+
+    .Input7 input {
+        width: 100%;
+    }
+}
+/* Input7 */
+
+/* Input8 */
+.Input8 {
+    text-align: right;
+    margin: 20px;
+}
+
+.Input8 input {
+    height: 30px;
+    width: 300px;
+}
+
+@media only screen and (max-width:800px) {
+
+
+
+    .Input8 input {
+        width: 100%;
+    }
+}
+/* Input8 */
+
+.PageNum {
+    margin: 20px;
 }

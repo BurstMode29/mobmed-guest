@@ -6,7 +6,7 @@ function Navigation() {
         <div>
             <div className='Logo'>
 
-                <Link to='/'><div className='MenuLogo'><i class="fa-solid fa-heart-pulse"></i>MOB<span className='span1'>MED</span></div></Link>
+                <Link className='NavigationHome' to='/'><div className='MenuLogo'><i class="fa-solid fa-heart-pulse"></i>MOB<span className='span1'>MED</span></div></Link>
 
                 <div className='Navigation' id='Nav'>
                     <div className='NavLinks' id='Links'>

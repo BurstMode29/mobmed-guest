@@ -24,7 +24,7 @@ function Home() {
 
                 <div className='MainContent'>
 
-                    <Link to='/signup@doctor'><div className='content1'>
+                    <Link className='SignUpDoctor' to='/signup@doctor'><div className='content1'>
                         <div>
                             <div><i class="fa-solid fa-user-doctor"></i></div>
                             <div>DOCTORS</div>
