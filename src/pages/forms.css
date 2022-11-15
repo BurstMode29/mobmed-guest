@@ -17,6 +17,10 @@
     background-color: white;
 }
 
+/* .Tab {
+    display: none;
+} */
+
 .TopLeft {
     text-align: left;
 }
@@ -147,6 +151,7 @@
         width: 100%;
     }
 }
+
 /* Input2 */
 
 
@@ -197,6 +202,7 @@
         width: 100%;
     }
 }
+
 /* Input4 */
 
 
@@ -223,6 +229,7 @@
         width: 100%;
     }
 }
+
 /* Input5 */
 
 
@@ -249,6 +256,7 @@
         width: 100%;
     }
 }
+
 /* Input6 */
 
 /* Input7 */
@@ -271,6 +279,7 @@
         width: 100%;
     }
 }
+
 /* Input7 */
 
 /* Input8 */
@@ -292,8 +301,65 @@
         width: 100%;
     }
 }
+
 /* Input8 */
 
 .PageNum {
     margin: 20px;
+}
+
+/* ProfessionalInformation */
+
+.SectionHeader1 {
+    margin: 20px;
+}
+
+.JobTitle {
+    width: 97%;
+}
+
+.Education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: #042940;
+}
+
+.Edu {
+    text-align: left;
+    margin: 20px;
+    font-weight: bold;
+    color: #042940;
+}
+
+.Education input {
+    width: 500px;
+    margin: 10px;
+}
+
+.MedicalEducation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background-color: #042940;
+}
+
+.MedicalEducation input {
+    width: 500px;
+    margin: 10px;
+}
+
+.CheckBox {
+    text-align: left;
+    margin: 20px;
+}
+
+.Tab {
+    display: block;
+}
+
+.Tab1 {
+    display: none;
 }
