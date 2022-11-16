@@ -694,6 +694,10 @@
   font-size: 12px;
 }
 
+.SignUpCourier {
+  text-decoration-line: none;
+}
+
 .content2 {
   height: 190px;
   width: 190px;

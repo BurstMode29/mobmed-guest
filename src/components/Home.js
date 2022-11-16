@@ -6,7 +6,7 @@ import Navigation from './Navigation';
 function Home() {
     return (
         <div>
-            
+
             {/* Navigation */}
             <Routes>
                 <Route path='/' element={<Navigation />} />
@@ -33,14 +33,17 @@ function Home() {
 
                     </div></Link>
 
-                    <div className='content2'>
-                        <div>
-                            <div><i class="fa-solid fa-truck-medical"></i></div>
-                            <div>COURIERS</div>
-                            <p>Interested on lending a helping hand to earn an extra income, click here to sign up as a mobmed courier.</p>
-                        </div>
+                    <Link className='SignUpCourier' to='/signup@courier'>
+                        <div className='content2'>
+                            <div>
+                                <div><i class="fa-solid fa-truck-medical"></i></div>
+                                <div>COURIERS</div>
+                                <p>Interested on lending a helping hand to earn an extra income, click here to sign up as a mobmed courier.</p>
+                            </div>
 
-                    </div>
+                        </div>
+                    </Link>
+
                     <div className='content3'>
                         <div>
                             <div><i class="fa-solid fa-prescription-bottle-medical"></i></div>
