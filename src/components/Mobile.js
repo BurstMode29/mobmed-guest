@@ -1,8 +1,20 @@
 import React from 'react'
+import '../App.css';
 
 function Mobile() {
+
+    function MenuButton() {
+        const x = document.getElementById("MNav");
+        if (x.style.left === "-1100px") {
+            x.style.left = "0px"
+        } else {
+            x.style.left = "-1100px"
+        }
+    }
+
     return (
         <div>
+         <div className='MenuIcon' id='MenuIcon' ><div className='MenuBox' id='MenuBox' onClick={MenuButton}><i class="fa-solid fa-bars"></i></div></div>
             <div className='MobileNav' id='MNav'>
                 <div className='MobileNavHead'>
                     <div className='NavLogo'><i class="fa-solid fa-heart-pulse"></i>MOB

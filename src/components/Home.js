@@ -27,8 +27,8 @@ function Home() {
                     <Link className='SignUpDoctor' to='/signup@doctor'><div className='content1'>
                         <div>
                             <div><i class="fa-solid fa-user-doctor"></i></div>
-                            <div>DOCTORS</div>
-                            <p>Are you a doctor looking for better ways to market your service/profession click here to sign up!</p>
+                            <div>DOCTOR</div>
+                            {/* <p>Are you a doctor looking for better ways to market your service/profession click here to sign up!</p> */}
                         </div>
 
                     </div></Link>
@@ -37,21 +37,24 @@ function Home() {
                         <div className='content2'>
                             <div>
                                 <div><i class="fa-solid fa-truck-medical"></i></div>
-                                <div>COURIERS</div>
-                                <p>Interested on lending a helping hand to earn an extra income, click here to sign up as a mobmed courier.</p>
+                                <div>COURIER</div>
+                                {/* <p>Interested on lending a helping hand to earn an extra income, click here to sign up as a mobmed courier.</p> */}
                             </div>
 
                         </div>
                     </Link>
 
-                    <div className='content3'>
-                        <div>
-                            <div><i class="fa-solid fa-prescription-bottle-medical"></i></div>
-                            <div>PHARMACIES</div>
-                            <p>Sell your medical products/cosmetics online using mobmeds ecommerce platform, click here to sign up as a pharmacists.</p>
-                        </div>
+                    <Link className='SignUpPharmacy' to='/signup@pharmacy'>
+                        <div className='content3'>
+                            <div>
+                                <div><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+                                <div>PHARMACY</div>
+                                {/* <p>Sell your medical products/cosmetics online using mobmeds ecommerce platform, click here to sign up as a pharmacists.</p> */}
+                            </div>
 
-                    </div>
+                        </div>
+                    </Link>
+
 
                 </div>
 
@@ -246,6 +249,7 @@ function Home() {
 
                 </div>
             </div>
+
         </div>
     )
 }

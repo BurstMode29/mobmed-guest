@@ -14,7 +14,10 @@
 .Form {
     height: 100%;
     width: 100%;
-    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #042940;
 }
 
 /* .Tab {
@@ -378,4 +381,82 @@
 .CheckBox {
     text-align: left;
     margin: 20px;
+}
+
+/* LoginForm */
+.Polygon {
+    position: relative;
+    bottom: -3px;
+    height: 695px;
+    width: 100%;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm form {
+    height: 500px;
+    width: 500px;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #042940;
+    position: absolute;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:800px) {
+    .loginForm form {
+        top: 50px;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+.LoginFormHeader {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: -50px;
+}
+
+.LoginFormText {
+    font-size: 15px;
+    color: white;
+    position: relative;
+    top: -10px;
+}
+
+.loginForm input {
+    height: 50px;
+    width: 400px;
+    margin: 20px;
+}
+
+@media only screen and (max-width:800px) {
+    .loginForm input {
+        width: 90vw;
+    }
+}
+
+.Forgot {
+    color: white;
+}
+
+.loginForm button {
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    background-color: #9fc131;
+    border-color: transparent;
+    color: white;
+}
+
+.loginForm button:hover {
+    box-shadow: 0px 0px 5px #9fc131;
 }
