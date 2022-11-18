@@ -2,6 +2,7 @@ import React from 'react'
 import contact from '../images/contact_us.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigation';
+import ContactForm from './ContactForm';
 
 function Home() {
     return (
@@ -222,19 +223,9 @@ function Home() {
                 <div className='ContactUsContent'>
                     <div className='ImageBox2'><img src={contact}></img></div>
                     <div>
-                        <form className='ContactForm'>
-
-                            <div>
-                                <div className='Header5'>CONTACT US</div>
-                                <p>Occaecat pariatur sint aliquip labore aliqua sunt id consequat do anim. Minim sunt cupidatat veniam veniam aute.</p>
-                                <div className='Inputs'>
-                                    <input className='Name' type='text'></input><br></br>
-                                    <input className='Email' type='email'></input><br></br>
-                                    <input className='Message' type='text'></input><br></br>
-                                    <input className='Submit' type='submit'></input>
-                                </div>
-                            </div>
-                        </form>
+                        <Routes>
+                            <Route path='/' element={<ContactForm />} />
+                        </Routes>
                     </div>
                 </div>
             </div>
