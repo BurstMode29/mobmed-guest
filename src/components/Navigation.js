@@ -19,7 +19,7 @@ function Navigation() {
                                 <div className='DesktopLoginContent3' id='DLC3'><i class="fa-solid fa-sort"></i></div>
                             </div> */}
                         </div>
-                        <div><a href='#'>REGISTER</a></div>
+                        <div><Link to='/register@mobmed'><a href='#'>REGISTER</a></Link></div>
                         <div><a href='#'>ABOUT</a></div>
                         <div><a href='#'>SERVICES</a></div>
                         <div><a href='#'>CONTACT</a></div>

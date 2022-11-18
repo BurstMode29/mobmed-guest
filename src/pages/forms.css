@@ -460,3 +460,119 @@
 .loginForm button:hover {
     box-shadow: 0px 0px 5px #9fc131;
 }
+
+/* RegistrationForm */
+.RegisterFormArea {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisterFormBox {
+    height: 80%;
+    width: 50%;
+    background-color: #042940;
+}
+
+.RegFormHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.RegHead {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.RegText {
+    position: relative;
+    color: white;
+    top: 25px;
+}
+
+.RegIcon {
+    font-size: 100px;
+    color: #9fc131;
+    margin: 20px;
+}
+
+.RegLine {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+}
+
+.LineBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input 1 */
+.RegInput1 {
+    margin: 20px;
+}
+
+.RegInput1 label {
+    position: relative;
+    left: -16px;
+    color: white;
+}
+
+.RegInput1 input {
+    position: relative;
+    right: -20px;
+    margin: 5px;
+    width: 270px;
+}
+
+/* Input 2 */
+.RegInput2 {
+    margin: 20px;
+}
+
+.RegInput2 label {
+    position: relative;
+    left: -10px;
+    color: white;
+}
+
+.RegInput2 input {
+    position: relative;
+    width: 160px;
+    margin: 15px;
+    right: -24px;
+}
+
+/* Input 3 */
+.RegInput3 {
+    margin: 20px;
+}
+
+.RegInput3 label {
+    position: relative;
+    left: -26px;
+    color: white;
+}
+
+.RegInput3 select {
+    position: relative;
+    right: -26px;
+    width: 563px;
+}
+
+/* Input 4 */
+
+.RegInput4 {
+    margin: 20px;
+}
+
+.RegInput4 input {
+    position: relative;
+    width: 550px;
+}
