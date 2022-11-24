@@ -84,8 +84,8 @@ function DoctorForm() {
                                     <input type="text" />
                                 </div>
                                 <div>
-                                    <div className='Label'>Address</div><br></br>
-                                    <input type="text" />
+                                    <div className='Label'>Password</div><br></br>
+                                    <input type="password" />
                                 </div>
                             </div>
 
