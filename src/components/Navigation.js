@@ -1,13 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Routes, Route } from 'react-router-dom'
+import Mobile from './Mobile'
 
 function Navigation() {
     return (
         <div>
+
+
             <div className='Logo'>
 
                 <Link className='NavigationHome' to='/'><div className='MenuLogo'><i class="fa-solid fa-heart-pulse"></i>MOB<span className='span1'>MED</span></div></Link>
-
+                {/* Navigation */}
+                <Routes>
+                    <Route path='/' element={<Mobile />} />
+                </Routes>
+                {/* Navigation */}
                 <div className='Navigation' id='Nav'>
                     <div className='NavLinks' id='Links'>
                         <div className='LoginLink' id='LoginLink'><a href='#'>LOGIN</a>
@@ -24,7 +31,7 @@ function Navigation() {
                         <div><a href='#'>CONTACT</a></div>
                     </div>
                 </div>
-                <div className='MenuIcon' id='MenuIcon' ><div className='MenuBox' id='MenuBox'><i class="fa-solid fa-bars"></i></div></div>
+
             </div>
         </div>
     )

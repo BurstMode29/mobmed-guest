@@ -14,7 +14,10 @@
 .Form {
     height: 100%;
     width: 100%;
-    background-color: white;
+    border-style: solid;
+    border-color: #042940;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 /* .Tab {
@@ -39,7 +42,6 @@
 
 .TopLeftText {
     margin: 20px 20px;
-    width: 99%;
     color: #042940;
 }
 
@@ -65,7 +67,6 @@
 .SectionText {
     text-align: left;
     margin: 20px 20px;
-    width: 100%;
     color: #042940;
 }
 
