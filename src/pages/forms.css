@@ -14,10 +14,10 @@
 .Form {
     height: 100%;
     width: 100%;
-    margin: 10px;
-    border-radius: 10px;
     border-style: solid;
     border-color: #042940;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 /* .Tab {
@@ -42,7 +42,6 @@
 
 .TopLeftText {
     margin: 20px 20px;
-    width: 99%;
     color: #042940;
 }
 
@@ -68,7 +67,6 @@
 .SectionText {
     text-align: left;
     margin: 20px 20px;
-    width: 100%;
     color: #042940;
 }
 
@@ -459,4 +457,251 @@
 
 .loginForm button:hover {
     box-shadow: 0px 0px 5px #9fc131;
+}
+
+/* RegistrationForm */
+.RegisterFormArea {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisterFormBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1500px;
+    width: 50%;
+    background-color: #042940;
+}
+
+.RegFormHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:1200px) {
+    .RegFormHead {
+        flex-direction: column;
+    }
+}
+
+.RegHead {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.RegText {
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.RegIcon {
+    font-size: 70px;
+    color: #9fc131;
+    margin-left: 110px;
+}
+
+.RegLine {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.LineBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegLabels {
+    text-align: left;
+    width: 100px;
+    font-size: 13px;
+    color: white;
+}
+
+.RegInputs {
+    text-align: right;
+    width: 470px;
+    flex-direction: row;
+}
+
+@media only screen and (max-width:1200px) {
+    .RegInputs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.RegInput1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:1200px) {
+    .RegInput1 {
+        flex-direction: column;
+    }
+}
+
+
+.RegInput1 input {
+    height: 50px;
+    margin-left: 9px;
+}
+
+/* RegInput2 */
+.RegInput2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput2 input {
+    width: 110px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+/* RegInput2 */
+
+.RegInput3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput3 select {
+    width: 363px;
+    height: 50px;
+}
+
+.RegInput4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput4 input {
+    width: 355px;
+    height: 50px;
+}
+
+.RegInput5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput5 input {
+    width: 354px;
+    height: 50px;
+}
+
+.RegInput6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput6 input {
+    width: 354px;
+    height: 50px;
+}
+
+.RegInput6 .RegLabels {
+    position: relative;
+    top: -110px;
+}
+
+.RegInput7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput7 select {
+    width: 360px;
+    height: 50px;
+}
+
+.RegInput8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput8 input {
+    width: 350px;
+    height: 50px;
+}
+
+.RegInput9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput9 input {
+    width: 350px;
+    height: 50px;
+}
+
+.RegInput10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -160px;
+    margin-top: 20px;
+}
+
+.RegInput10 .RegLabels {
+    width: 200px;
+}
+
+.RegInput10 .RegInputs {
+    width: 20px;
+    text-align: center;
+    color: white;
+}
+
+.RegInput11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.RegInput11 input {
+    width: 345px;
+    height: 200px;
+}
+
+.Enroll {
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    float: right;
 }

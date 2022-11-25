@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 import '../App.css';
 
 function Mobile() {
-
-    function MenuButton() {
-        const x = document.getElementById("MNav");
-        if (x.style.left === "-1100px") {
-            x.style.left = "0px"
+    function click() {
+        var x = document.getElementById("MNav");
+        if(x.style.display === "none") {
+            x.style.display = "block";
         } else {
-            x.style.left = "-1100px"
+            x.style.display = "none";
         }
     }
 
     return (
         <div>
-         <div className='MenuIcon' id='MenuIcon' ><div className='MenuBox' id='MenuBox' onClick={MenuButton}><i class="fa-solid fa-bars"></i></div></div>
+            <div className='MenuIcon' id='MenuIcon' ><div className='MenuBox' id='MenuBox' onClick={click}><i class="fa-solid fa-bars"></i></div></div>
             <div className='MobileNav' id='MNav'>
+
                 <div className='MobileNavHead'>
                     <div className='NavLogo'><i class="fa-solid fa-heart-pulse"></i>MOB
                         <span className='span3'>MED</span></div>
