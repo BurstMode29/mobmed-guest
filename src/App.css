@@ -70,6 +70,8 @@
 /* This says if the screen with is less than 1200px, then the menu button will display */
 @media only screen and (max-width:1200px) {
   .MenuIcon {
+    top: -45px;
+    position: relative;
     font-size: 20px;
     display:flex;
     justify-content: center;
@@ -1453,11 +1455,11 @@
   border-color: #9fc131;
 }
 
-@media only screen and(max-width) {
+/* @media only screen and(max-width) {
   .ContactForm {
     
   }
-}
+} */
 
 @media only screen and (max-width:800px) {
   .ContactForm {

@@ -32,8 +32,7 @@ const handleSubmit=(e)=>{
 };
 
     return (
-        <div className='ContactForm'>
-            ContactForm
+        <div className='ContactForm1'>
             <form className='ContactForm' onSubmit={handleSubmit}>
 
                 <div>

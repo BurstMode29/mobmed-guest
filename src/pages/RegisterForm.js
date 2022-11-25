@@ -21,7 +21,7 @@ function RegisterForm() {
                             </div>
                             <div className='RegIcon'><i class="fa-sharp fa-solid fa-hospital-user"></i></div>
                         </div>
-                        <div className='LineBox'><div className='RegLine'></div></div>
+                        <div className='RegLineBox'><div className='RegLine'></div></div>
 
 
                         <div className='RegInput1'>
