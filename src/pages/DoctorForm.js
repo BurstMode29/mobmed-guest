@@ -108,8 +108,8 @@ const signUp = () =>{
                                     <input type="text" />
                                 </div>
                                 <div>
-                                    <div className='Label' onChange={(e) => setPassword(e.target.value)}>Password</div><br></br>
-                                    <input type="password" />
+                                    <div className='Label' >Password</div><br></br>
+                                    <input type="password" onChange={(e) => setPassword(e.target.value)}/>
                                 </div>
                             </div>
 
@@ -133,8 +133,8 @@ const signUp = () =>{
                             </div>
 
                             <div className='Input4'>
-                                <div className='Label' type="email" onChange={(e) => setEmail(e.target.value)}>Email Address</div><br></br>
-                                <input type="email" />
+                                <div className='Label' type="email" >Email Address</div><br></br>
+                                <input type="email" onChange={(e) => setEmail(e.target.value)}/>
                             </div>
 
                             <div className='Input5'>
