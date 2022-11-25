@@ -1,8 +1,33 @@
 import { Route, Routes } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import './forms.css';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import app from './firebase';
+import { useState } from 'react';
 
 function CourierForm() {
+
+    const auth = getAuth(app);
+    
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+const signUp = () =>{
+   
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        console.log(user);
+        alert("succesfully created an account ")
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        // const errorMessage = error.message;
+        alert(errorCode)
+      });
+}
 
     function validateForm(event) {
         event.preventDefault()
@@ -83,7 +108,7 @@ function CourierForm() {
                                     <input type="text" />
                                 </div>
                                 <div>
-                                    <div className='Label'>Password</div><br></br>
+                                    <div className='Label' onChange={(e) => setPassword(e.target.value)}>Password</div><br></br>
                                     <input type="password" />
                                 </div>
                             </div>
@@ -108,8 +133,8 @@ function CourierForm() {
                             </div>
 
                             <div className='Input4'>
-                                <div className='Label'>Email Address</div><br></br>
-                                <input type="text" />
+                                <div className='Label' onChange={(e) => setEmail(e.target.value)}>Email Address</div><br></br>
+                                <input type="email" />
                             </div>
 
                             <div className='Input5'>
@@ -198,7 +223,7 @@ function CourierForm() {
                         </div>
                     </div>
                     <div className='Input8'>
-                        <button id='Click' type='submit' value='Submit'>SUBMIT</button>
+                        <button id='Click' type='submit' value='Submit' onClick={signUp}>SUBMIT</button>
                     </div>
                 </form>
             </div>
