@@ -828,10 +828,18 @@
 
 
 .ImageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   width: 400px;
   border-radius: 20px;
   background-color: white;
+}
+
+.ImageBox img {
+  height: 300px;
+  width: 250px;
 }
 
 @media only screen and (max-width:1200px) {

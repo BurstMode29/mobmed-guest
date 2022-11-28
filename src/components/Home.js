@@ -1,8 +1,10 @@
 import React from 'react'
 import contact from '../images/contact_us.png';
+import bag from '../images/MobmedBag.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigation';
 import ContactForm from './ContactForm';
+import ToolTips from './ToolTips';
 
 function Home() {
     return (
@@ -80,7 +82,9 @@ function Home() {
                         </p>
                     </div>
 
-                    <div className='ImageBox'></div>
+                    <div className='ImageBox'>
+                        <img src={bag} />
+                    </div>
                 </div>
             </div>
 
@@ -89,8 +93,18 @@ function Home() {
                 <div className='ExtraContent'>
 
                     <div className='Icons'>
+
                         <div>
-                            <div className='DiamondIcon1'><div className='D1'><i class="fa-sharp fa-solid fa-clock"></i></div><div className='D2'><i class="fa-solid fa-computer"></i></div></div>
+                            <div className='DiamondIcon1' id='Diamond1'>
+                                <Routes>
+                                    <Route path='/' element={<ToolTips />} />
+                                </Routes>
+                                <div className='D1'>
+
+                                    <i class="fa-sharp fa-solid fa-clock"></i>
+                                </div>
+                                <div className='D2'><i class="fa-solid fa-computer"></i></div>
+                            </div>
                             <div className='DiamondIcon2'><div className='D3'><i class="fa-solid fa-truck-medical"></i></div></div>
                             <div className='DiamondIcon3'><div className='D4'><i class="fa-solid fa-prescription-bottle-medical"></i></div><div className='D5'><i class="fa-solid fa-user-doctor"></i></div></div>
                         </div>

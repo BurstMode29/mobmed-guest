@@ -1,0 +1,21 @@
+.ToolTip1 {
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: grey;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.Triangle {
+    top: 70px;
+    left: 20px;
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: aqua;
+}
