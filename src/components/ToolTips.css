@@ -3,10 +3,27 @@
     width: 150px;
     border-radius: 10px;
     font-size: 10px;
-    background-color: grey;
+    background-color: white;
+    border-color: #9fc131;
+    border-style: solid;
     position: absolute;
     z-index: 1;
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ToolTip2 {
+    height: 70px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: white;
+    border-color: #9fc131;
+    border-style: solid;
+    position: absolute;
+    z-index: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -15,7 +32,9 @@
     top: 70px;
     left: 20px;
     position: absolute;
-    height: 5px;
-    width: 5px;
-    background-color: aqua;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #9fc131;
 }

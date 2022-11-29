@@ -924,6 +924,19 @@
   margin-right: 100px;
 }
 
+/* ToolTip */
+.TT1 {
+  position: absolute;
+  top: -100px;
+  left: 50px;
+  visibility: hidden;
+}
+
+.D1:hover .TT1 {
+  visibility: visible;
+} 
+/* ToolTip */
+
 .D2 i {
   rotate: -45deg;
 }
@@ -1161,7 +1174,7 @@
 }
 
 .ServiceProvidersText {
-  font-size: 2vw;
+  font-size: 1.3vw;
   font-weight: bold;
   color: #042940;
 }
@@ -1607,3 +1620,6 @@
     display: block;
   }
 }
+
+
+
