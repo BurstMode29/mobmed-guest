@@ -22,7 +22,7 @@ function LoginForm() {
                         <input type='text' placeholder='User ID' /><br></br>
                         <input type='text' placeholder='Password' />
                         <div className='Forgot'>Forgot Password?..</div>
-                        <button type='submit'>LOGIN</button>
+                        <button type='submit' >LOGIN</button>
                     </div>
                 </form>
             </div>

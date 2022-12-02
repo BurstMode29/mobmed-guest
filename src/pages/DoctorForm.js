@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import './forms.css';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import app from './firebase'
 import { useState } from 'react';
 
@@ -28,6 +28,20 @@ const signUp = () =>{
         // const errorMessage = error.message;
         alert(errorCode)
       });
+
+      const signIn = () => {
+        signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+
+      }
 }
   
 
@@ -224,6 +238,7 @@ const signUp = () =>{
                     </div>
                     <div className='Input8'>
                         <button id='Click' type='submit' value='Submit' onClick={signUp}>SUBMIT</button>
+                        
                     </div>
                 </form>
             </div>

@@ -32,14 +32,9 @@ function ContactForm() {
 // };
 
     return (
-<<<<<<< HEAD
         <div className='ContactForm'>
             ContactForm
             <form className='ContactForm' >
-=======
-        <div className='ContactForm1'>
-            <form className='ContactForm' onSubmit={handleSubmit}>
->>>>>>> a750aad9e6776aa1274db44ec35c4095d7d4a964
 
                 <div>
                     <div className='Header5'>CONTACT US</div>
