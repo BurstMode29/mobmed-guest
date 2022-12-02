@@ -216,7 +216,7 @@ const signUp = () =>{
                                 <div className='SectionText'>
                                     This site and all its information is protected by the POPI Act of South Africa
                                     and all the information you provided will be handled according to the POPI Act,
-                                    to continue your application please agree<br></br> to the terms.
+                                    to continue your application please agree to the terms.
                                 </div>
                                 <div className='CheckBox'><input type='checkbox' />I hereby agree to the terms.</div>
                             </div>

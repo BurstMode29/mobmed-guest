@@ -1,8 +1,10 @@
 import React from 'react'
 import contact from '../images/contact_us.png';
+import bag from '../images/MobmedBag.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigation';
 import ContactForm from './ContactForm';
+import ToolTips from './ToolTips';
 
 function Home() {
     return (
@@ -74,14 +76,15 @@ function Home() {
                     <div className='InfoContentText'>
                         <div className='Header2'>WHO IS MOBMED?</div>
                         <div className='LineBox'><div className='Line'></div></div>
-                        <p> Velit ex Lorem in sunt officia aliquip nisi excepteur aliquip quis nisi ut.
-                            Est est duis elit eiusmod ad id irure est enim nisi culpa. Velit non ullamco cillum sunt occaecat ea cillum adipisicing mollit et.
-                            Aliqua sunt cupidatat labore non Lorem in cupidatat duis. Consectetur velit exercitation nisi cupidatat nisi amet nulla.
-                            Consectetur occaecat eu et non reprehenderit elit aute est adipisicing nisi sint.
+                        <p> Mobmed is an online platform, designed and built for the medical industry,
+                            for doctors and pharmacists to provide potential patients with services or have
+                            there medication delivered at the comforts of their own home.
                         </p>
                     </div>
 
-                    <div className='ImageBox'></div>
+                    <div className='ImageBox'>
+                        <img src={bag} />
+                    </div>
                 </div>
             </div>
 
@@ -90,8 +93,20 @@ function Home() {
                 <div className='ExtraContent'>
 
                     <div className='Icons'>
+
                         <div>
-                            <div className='DiamondIcon1'><div className='D1'><i class="fa-sharp fa-solid fa-clock"></i></div><div className='D2'><i class="fa-solid fa-computer"></i></div></div>
+                            <div className='DiamondIcon1' id='Diamond1'>
+                                <div className='D1'><i class="fa-sharp fa-solid fa-clock">
+                                    <div className='TT1'>
+                                        <Routes>
+                                            <Route path='/' element={<ToolTips />} />
+                                        </Routes>
+                                    </div>
+                                </i>
+                                </div>
+                                <div className='D2'><i class="fa-solid fa-computer"></i></div>
+                            </div>
+
                             <div className='DiamondIcon2'><div className='D3'><i class="fa-solid fa-truck-medical"></i></div></div>
                             <div className='DiamondIcon3'><div className='D4'><i class="fa-solid fa-prescription-bottle-medical"></i></div><div className='D5'><i class="fa-solid fa-user-doctor"></i></div></div>
                         </div>
@@ -108,11 +123,14 @@ function Home() {
 
                                     <div className='OurServicesTextBox'>
                                         <p>
-                                            Elit aute tempor adipisicing sunt proident quis id deserunt aliquip cupidatat irure ipsum. Reprehenderit consequat ullamco cillum aliquip cupidatat ipsum est eiusmod nisi dolore do proident sint. Qui anim proident qui occaecat Lorem excepteur amet occaecat est.
-                                            Nulla culpa minim nostrud sunt eiusmod nisi. Ipsum voluptate enim Lorem commodo non mollit Lorem aute laboris nostrud minim sit sint. Culpa adipisicing labore velit esse sint nulla exercitation dolor magna occaecat nulla sint. Ad tempor in anim non exercitation sunt anim cillum.
-                                            Consectetur magna amet sint sint. Nulla consectetur dolor reprehenderit adipisicing laboris voluptate ipsum id ullamco minim qui ullamco qui.<br></br>
-                                            Minim incididunt occaecat sint voluptate ea dolore Lorem proident voluptate occaecat esse id do. Ex laborum veniam adipisicing occaecat incididunt labore occaecat culpa occaecat pariatur.
-                                            Duis do do ipsum eiusmod laboris. Est anim mollit magna anim.<br></br> <br></br>
+                                            Mobmed offers 24 hour medical assistance, make and enquiry now.<br></br><br></br>
+                                            With Mobmeds Mobile Online Platform its possible to
+                                            connect with Mobmed on any device via browser or app.<br></br><br></br>
+                                            Order your medication from trusted pharmacies all around South Africa
+                                            and have it delivered by a courier you can trust, or simply collect in
+                                            a store closest to your home whenever you're ready.<br></br><br></br>
+                                            Have your doctor pay you a visit, at your home by making
+                                            a doctors appointment with Mobmed.
                                         </p>
                                     </div>
 
@@ -136,7 +154,8 @@ function Home() {
                         <div className='Header4'>WHO USES MOBMED?</div>
                         <div className='LineBox'><div className='Line2'></div></div>
                         <p className='ServiceProvidersText'>
-                            Duis aliqua pariatur ut enim aliqua proident enim officia do ex tempor cillum amet ullamco.
+                            Mobmed is designed for a variety of users whether you require
+                            medical attention or a business selling products or providing a service.
                         </p>
                     </div>
                 </div>
@@ -148,8 +167,8 @@ function Home() {
                                 <div className='ContentBoxImage1'></div>
                                 <div className='ContentHeader1'>DOCTORS</div>
                                 <p className='ContentBoxText1'>
-                                    Minim fugiat id ipsum quis laborum reprehenderit adipisicing pariatur aliquip amet.
-                                    Aute in exercitation nisi anim est cillum aliquip mollit tempor aliqua sint.
+                                    Whether you're a doctor working for a company or just by profession
+                                    Mobmed will always have patients that require your services.
                                 </p>
                                 <div className='ContentBoxIcons'>
                                     <i class="fa-brands fa-facebook"></i>
@@ -165,8 +184,8 @@ function Home() {
                                 <div className='ContentBoxImage2'></div>
                                 <div className='ContentHeader2'>DRIVERS</div>
                                 <p className='ContentBoxText2'>
-                                    Minim fugiat id ipsum quis laborum reprehenderit adipisicing pariatur aliquip amet.
-                                    Aute in exercitation nisi anim est cillum aliquip mollit tempor aliqua sint.
+                                    Looking for a part-time job or make it full-time, Mobmed
+                                    requires professional drivers to form part of a great courier team.
                                 </p>
                                 <div className='ContentBoxIcons'>
                                     <i class="fa-brands fa-facebook"></i>
