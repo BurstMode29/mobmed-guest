@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import './forms.css';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword,} from "firebase/auth";
 import app from './firebase'
 import { useState } from 'react';
 
@@ -13,36 +13,24 @@ function DoctorForm() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-const signUp = () =>{
+
    
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        console.log(user);
-        alert("succesfully created an account ")
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        // const errorMessage = error.message;
-        alert(errorCode)
-      });
-
-      const signIn = () => {
-        signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-  });
-
-      }
-}
+    const signUp = () =>{
+   
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            console.log(user);
+            alert("succesfully created an account ")
+            // ...
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            // const errorMessage = error.message;
+            alert(errorCode)
+          });
+    }
   
 
     function validateForm(event) {
