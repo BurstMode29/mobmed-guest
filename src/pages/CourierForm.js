@@ -1,8 +1,9 @@
+import app from './firebase';
+import { getAuth, createUserWithEmailAndPassword, } from "firebase/auth";
 import { Route, Routes } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import './forms.css';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import app from './firebase';
+
 import { useState } from 'react';
 
 function CourierForm() {
